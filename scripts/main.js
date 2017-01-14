@@ -19,11 +19,17 @@ $(document).ready(function(){
 	var $clearEntry = $('#clearEntry');
 	var $answer = $('#answerText');
 
+$allClear.click(function(){
+	$answer.html(0);
+})
 
 $one.click(function(){
 	$answer.append(1);
 });
 
+$two.click(function(){
+	$answer.append(2);
+});
 
 
 });
