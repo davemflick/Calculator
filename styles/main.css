@@ -1,3 +1,67 @@
 body{
-	background: #ccc;
+	background: #aaa;
+	text-align: center;
+}
+
+#calculatorBody{
+	margin-top: 20%;
+	border: 1px solid black;
+	background: #ddd;
+	height: 100%;
+	width: 100%;
+}
+
+#answerBox{
+	background: white;
+	border: 1px solid black;
+	height: 45px;
+	text-align: right;
+}
+
+#answerText{
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	color: #4aaae5;
+	font-size: 30px;
+	height: 45px;
+	padding-right: 5px
+}
+
+#buttonRows{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#nonClearBtns {
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#numberBtns{
+ 
+ padding: 10px;
+}
+
+@media(max-width:360px){
+
+	#calculatorName{
+		font-size: 15px;
+	}
+	#answerBox{
+	background: white;
+	border: 1px solid black;
+	height: 20px;
+	text-align: right;
+}
+
+#answerText{
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	color: #4aaae5;
+	font-size: 15px;
+	height: 20px;
+	padding-right: 5px
+}
 }
