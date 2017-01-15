@@ -45,6 +45,7 @@ $allClear.click(function(){
 	minusArr=[];
 	equatArr=[];
 	strArr = [];
+	$('#gif-container').css('display', 'none');
 	sum;
 })
 
@@ -162,6 +163,7 @@ $answer.val(sum)
 if(sum === 69){$image.attr('src', 'images/69.gif'), $('#gif-container').css('display', 'block');}
 else if (sum>=3.14 && sum<3.15){$image.attr('src', 'images/pi.gif'), $('#gif-container').css('display', 'block');}
 else if (sum === 420){$image.attr('src', 'images/420.gif'), $('#gif-container').css('display', 'block');}
+else {$('#gif-container').css('display', 'none');}
 strArr = [];
 })
 

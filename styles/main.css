@@ -1,35 +1,55 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
 body{
-	background: #aaa;
+		background-image: url('calcBackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
+	font-family: 'Vollkorn', serif;
+	opacity: 1;
 }
 
 #calculatorBody{
 	margin-top: 20%;
-	border: 1px solid black;
-	background: #ddd;
+	background-blend-mode: darken;
 	height: 100%;
 	width: 100%;
 }
 
-#answerBox{
-	height: 45px;
-	text-align: center;
+#calculatorName{
+	color: #036A71;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px black;
 }
 
 #answerText{
 	display: inline-flex;
     align-items: center;
     justify-content: center;
-	color: #4aaae5;
+	color: #0A096F;
 	font-size: 30px;
 	height: 45px;
-	padding-right: 5px
+	padding-right: 5px;
+	text-align: center;
 }
 
+input{
+	background: none;
+}
 
+.btn{
+	box-shadow: 2px 2px 2px #333;
+	background-color: #eee;
+}
 #buttonRows{
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 30px;
 }
 #nonClearBtns {
 display: inline-flex;
@@ -38,7 +58,6 @@ display: inline-flex;
 }
 
 #numberBtns{
- 
  padding: 10px;
 }
 
@@ -48,6 +67,7 @@ display: inline-flex;
 
 img{
 	width: 200px;
+	border-radius: 20px;
 }
 
 @media(max-width:360px){
@@ -55,11 +75,17 @@ img{
 	#calculatorName{
 		font-size: 15px;
 	}
+
+input#answerText.num {
+	height: 40px;
+}
+
 	#answerBox{
 	background: white;
 	border: 1px solid black;
-	height: 20px;
+	height: 40px;
 	text-align: right;
+
 }
 
 #answerText{
@@ -67,8 +93,9 @@ img{
     align-items: center;
     justify-content: center;
 	color: #4aaae5;
-	font-size: 15px;
+	font-size: 20px;
 	height: 20px;
 	padding-right: 5px
+	
 }
 }
