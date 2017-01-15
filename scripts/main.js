@@ -18,6 +18,7 @@
 	var $allClear = $('#allClear');
 	var $clearEntry = $('#clearEntry');
 	var $answer = $('#answerText');
+	var $image = $('#gif');
 
 //buttons won't remain highlighted after being clicked.
 $('.btn').click(function(){this.blur()})
@@ -156,7 +157,11 @@ $divide.click(function(){
 $equals.click(function(){
 curDisplay = Number($answer.val());
 strArr.push(curDisplay);
-$answer.val(eval(strArr.join('')))
+var sum = eval(strArr.join(''));
+$answer.val(sum)
+if(sum === 69){$image.attr('src', 'images/69.gif'), $('#gif-container').css('display', 'block');}
+else if (sum>=3.14 && sum<3.15){$image.attr('src', 'images/pi.gif'), $('#gif-container').css('display', 'block');}
+else if (sum === 420){$image.attr('src', 'images/420.gif'), $('#gif-container').css('display', 'block');}
 strArr = [];
 })
 
