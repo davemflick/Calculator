@@ -12,10 +12,8 @@ body{
 }
 
 #answerBox{
-	background: white;
-	border: 1px solid black;
 	height: 45px;
-	text-align: right;
+	text-align: center;
 }
 
 #answerText{
@@ -27,6 +25,7 @@ body{
 	height: 45px;
 	padding-right: 5px
 }
+
 
 #buttonRows{
 	margin-top: 5px;
